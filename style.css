@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: #020513;
   background-repeat: no-repeat;
@@ -7,11 +13,12 @@ body {
 
 .card {
   width: 400px;
-  min-height: 550px;
   margin: auto;
-  border-radius: 10px;
+  border-radius: 20px;
   background: linear-gradient(to bottom right, #10c69f, #5c03e2);
   color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 .search {
@@ -30,6 +37,8 @@ body {
   margin-right: 0.5rem;
   padding: 10px 20px;
   background-color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  text-align: center;
 }
 
 .search-input:focus {
@@ -37,7 +46,6 @@ body {
 }
 
 .search-button {
-  height: 2rem;
   padding: 10px;
   border-radius: 500px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -49,6 +57,7 @@ body {
 
 .icon-holder {
   height: 160px;
+  padding: 20px;
 }
 
 .info {
@@ -56,7 +65,7 @@ body {
 }
 
 .temperature {
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 600;
   margin: 0;
 }
@@ -65,4 +74,48 @@ body {
   font-size: 35px;
   margin: 0;
   font-weight: 400;
+}
+
+.additional-info {
+  display: flex;
+}
+
+.additional-info > * {
+  width: 100%;
+}
+
+.city-icon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0) saturate(0) hue-rotate(0) brightness(100%) contrast(100%);
+  fill: white;
+  width: 120px;
+  height: 120px;
+}
+
+.tempetarure-holder {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+}
+.tempetarure-holder sup {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.wind, .humidity {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.text {
+  width: 100%;
+}
+
+p, span {
+  font-weight: 400;
+}
+
+.additional-info {
+  padding: 30px 0;
 }/*# sourceMappingURL=style.css.map */
