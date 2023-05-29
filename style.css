@@ -46,6 +46,14 @@ body {
   outline: none;
 }
 
+.search-input:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.search-input:focus::placeholder {
+  opacity: 0;
+}
+
 .search-button {
   padding: 10px;
   border-radius: 500px;
