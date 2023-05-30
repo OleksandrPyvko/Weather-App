@@ -30,7 +30,7 @@ export class UI {
      <div class="all-info">
     <div class="info">
     <div class='tempetarure-holder'>
-      <h2 class="temperature">${cityWeather.main.temp}</h2>
+      <h2 class="temperature">${Math.floor(cityWeather.main.temp)}</h2>
       <sup>°C</sup>
     </div>
         
@@ -38,7 +38,7 @@ export class UI {
     </div>
     <div class="additional-info">
         <div class="humidity">
-             <i class="fa-solid fa-water"></i>
+             <i class="fas fa-tint"></i>
              <span>${cityWeather.main.humidity}%</span>
               <div class="text">
                   
@@ -47,7 +47,7 @@ export class UI {
         </div>
 
          <div class="wind">
-             <i class="fa-solid fa-wind"></i>
+             <i class="fas fa-wind"></i>
              <span>${cityWeather.wind.speed} Km/h</span>
              <div class="text">
                  
